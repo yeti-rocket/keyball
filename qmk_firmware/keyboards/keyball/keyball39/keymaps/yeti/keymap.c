@@ -51,11 +51,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QK_BOOT  , KBC_RST  , _______  , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , KBC_RST  , QK_BOOT
   ),
 
-  [4] = LAYOUT_universal(),
-  [5] = LAYOUT_universal(),
-  [6] = LAYOUT_universal(),
-  [7] = LAYOUT_universal(),
-  [8] = LAYOUT_universal()
+  [4] = LAYOUT(),
+  [5] = LAYOUT(),
+  [6] = LAYOUT(),
+  [7] = LAYOUT(),
+  [8] = LAYOUT()
 };
 // clang-format on
 
