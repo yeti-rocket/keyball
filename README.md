@@ -1,3 +1,13 @@
+## 自分向け追記
+### QMK FirmwareをコンパイルしてProMicroへ書き込む方法
+1. "qmk_firmware/keyboards/keyball/keyball39/keymaps/yeti"ディレクトリ配下のファイルを編集しコミット
+1. [Github Actions](https://github.com/yeti-rocket/keyball/actions)が勝手にコンパイルするのでそれが終わったらworkflowのサマリからファイルをダウンロード
+1. [EEPROM書き込みサイト](https://sekigon-gonnoc.github.io/promicro-web-updater/index.html)にアクセス
+1. "ファイルを選択"からコンパイル結果ファイルをアップロード
+1. eeprom optionを"none"を選択して"flash"ボタン押下
+1. ポップアップで選択肢に出てこないのでリセットボタン（OLED画面の下にある小さいボタン）を2度押しした後に選択
+1. 書き込み完了
+
 # Keyball Series
 
 ![Keyball61](./keyball61/doc/rev1/images/kb61_001.jpg)
@@ -46,13 +56,3 @@ See [document for firmware source code](./qmk_firmware/keyboards/keyball/readme.
 ### Pre-compiled Firmwares
 
 (TO BE DOCUMENTED)
-
-## 自分向け追記
-### QMK FirmwareをコンパイルしてProMicroへ書き込む方法
-1. "qmk_firmware/keyboards/keyball/keyball39/keymaps/yeti"ディレクトリ配下のファイルを編集しコミット
-1. [Github Actions](https://github.com/yeti-rocket/keyball/actions)が勝手にコンパイルするのでそれが終わったらworkflowのサマリからファイルをダウンロード
-1. [EEPROM書き込みサイト](https://sekigon-gonnoc.github.io/promicro-web-updater/index.html)にアクセス
-1. "ファイルを選択"からコンパイル結果ファイルをアップロード
-1. eeprom optionを"none"を選択して"flash"ボタン押下
-1. ポップアップで選択肢に出てこないのでリセットボタン（OLED画面の下にある小さいボタン）を2度押しした後に選択
-1. 書き込み完了
