@@ -37,5 +37,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 4
-#define DYNAMIC_KEYMAP_LAYER_COUNT 9
 #define LAYER_STATE_16BIT
+
+// 念のため既存定義を解除
+#ifdef DYNAMIC_KEYMAP_LAYER_COUNT
+#undef DYNAMIC_KEYMAP_LAYER_COUNT
+#endif
+#define DYNAMIC_KEYMAP_LAYER_COUNT 9
+
+// 重要：EEPROM容量不足を防ぐため、マクロ数を0にする
+// これをしないとProMicroでは9レイヤー目が保存できない場合があります
+#ifdef DYNAMIC_KEYMAP_MACRO_COUNT
+#undef DYNAMIC_KEYMAP_MACRO_COUNT
+#endif
+#define DYNAMIC_KEYMAP_MACRO_COUNT 0
+
+THIS_SHOULD_ERROR
