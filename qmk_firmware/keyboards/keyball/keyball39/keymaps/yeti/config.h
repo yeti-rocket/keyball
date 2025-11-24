@@ -51,5 +51,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef DYNAMIC_KEYMAP_MACRO_COUNT
 #endif
 #define DYNAMIC_KEYMAP_MACRO_COUNT 0
-
-THIS_SHOULD_ERROR
