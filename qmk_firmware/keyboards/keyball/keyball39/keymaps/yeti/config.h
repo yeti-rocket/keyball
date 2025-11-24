@@ -51,7 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef DYNAMIC_KEYMAP_LAYER_COUNT
 #undef DYNAMIC_KEYMAP_LAYER_COUNT
 #endif
-#define DYNAMIC_KEYMAP_LAYER_COUNT 9
+#define DYNAMIC_KEYMAP_LAYER_COUNT 10
 
 // 重要：EEPROM容量不足を防ぐため、マクロ数を0にする
 // これをしないとProMicroでは9レイヤー目が保存できない場合があります
