@@ -49,10 +49,10 @@ See [document for firmware source code](./qmk_firmware/keyboards/keyball/readme.
 
 ## 自分向け追記
 ### QMK FirmwareをコンパイルしてProMicroへ書き込む方法
-1."qmk_firmware/keyboards/keyball/keyball39/keymaps/yeti"ディレクトリ配下のファイルを編集しコミットする
-1.github actionsで勝手にコンパイルするのでそれが終わったらworkflowのサマリからファイルをダウンロードする
-1.[EEPROM書き込みサイト](https://sekigon-gonnoc.github.io/promicro-web-updater/index.html)にアクセス
-1."ファイルを選択"からコンパイル結果ファイルをアップロード
-1.eeprom optionを"none"を選択して"flash"ボタン押下
-1.ポップアップで選択肢に出てこないのでリセットボタン（OLED画面の下にある小さいボタン）を2度押しした後に選択
-1.書き込み完了
+1. "qmk_firmware/keyboards/keyball/keyball39/keymaps/yeti"ディレクトリ配下のファイルを編集しコミットする
+1. github actionsで勝手にコンパイルするのでそれが終わったらworkflowのサマリからファイルをダウンロードする
+1. [EEPROM書き込みサイト](https://sekigon-gonnoc.github.io/promicro-web-updater/index.html)にアクセス
+1. "ファイルを選択"からコンパイル結果ファイルをアップロード
+1. eeprom optionを"none"を選択して"flash"ボタン押下
+1. ポップアップで選択肢に出てこないのでリセットボタン（OLED画面の下にある小さいボタン）を2度押しした後に選択
+1. 書き込み完了
