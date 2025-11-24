@@ -37,7 +37,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 4
+
+// 【追加修正】レイヤー変数を16ビットに拡張する
+#ifdef LAYER_STATE_8BIT
+#undef LAYER_STATE_8BIT
+#endif
+
+#ifndef LAYER_STATE_16BIT
 #define LAYER_STATE_16BIT
+#endif
 
 // 念のため既存定義を解除
 #ifdef DYNAMIC_KEYMAP_LAYER_COUNT
